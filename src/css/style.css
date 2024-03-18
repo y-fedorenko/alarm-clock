@@ -37,7 +37,6 @@ main {
   padding: 20px;
   width: auto;
   height: auto;
-  background-color: rgb(225, 225, 18);
 }
 
 h1 {
@@ -48,7 +47,7 @@ h1 {
 }
 
 .semicolon {
-  width: 30px;
+  width: 40px;
 }
 
 .time-hours, .time-minutes {
@@ -71,19 +70,32 @@ i , p {
   margin-right: 10px;
 }
 
-input[type='text'] {
+.set-box{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+input {
+  margin: 4px;
   height: 30px;
-  width: 50px;
+  font-size: 20px;
+  padding: 3px;
+  line-height: 20px;
+}
+
+input[type='text'] {
+  width: 60px;
   border-radius: 15px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000000;
   text-align: center;
 }
 
 input[type='button'] {
-  height: 30px;
-  width: 100px;
+  width: 120px;
   border-radius: 15px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000000;
   text-align: center;
-  background-color: #00ffff;
+  background-color: #199017;
+  color: #fff;
 }

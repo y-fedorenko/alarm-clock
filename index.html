@@ -22,11 +22,11 @@
         </div>
         <div class="alarm">
           <i class="fa-regular fa-bell"></i>
-          <p>AL:ARM</p>
+          <p>No alarm set</p>
         </div>
         <div class="set-box">
-          <input type="text" class="input-hours" placeholder="HH" />
-          <input type="text" class="input-minutes" placeholder="MM"/>
+          <input type="text" pattern="^(0?([0-9]|1[0-9]|2[0-3]))$" class="input-hours" placeholder="HH" />
+          <input type="text" pattern="^(0?[0-9]|[1-5][0-9])$" class="input-minutes" placeholder="MM"/>
           <input type="button" value="Set Alarm" class="set-alarm">
         </div>
       </div>
