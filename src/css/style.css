@@ -89,13 +89,42 @@ input[type='text'] {
   border-radius: 15px;
   border: 1px solid #000000;
   text-align: center;
+
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:hover {
+    border-color: #199017;
+  }
 }
 
 input[type='button'] {
   width: 120px;
   border-radius: 15px;
-  border: 1px solid #000000;
+  border: 1px solid #19901700;
   text-align: center;
   background-color: #199017;
   color: #fff;
+
+  &:hover {
+    border-color: #0719bb;
+    opacity: 0.9;
+  }
+
+  &:active {
+    background-color: #e4e5ec;
+    color: #000000;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 1s ease-in-out;
 }
